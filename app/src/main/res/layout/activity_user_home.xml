@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomeActivity"
+    android:orientation="vertical"
+    android:id="@+id/home"
+    android:background="#b39ddb"
+    android:padding="10dp">
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/textNama"
+        android:textColor="@color/white"
+        android:background="#673ab7"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Halo, Arif Dwi Nugroho">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginTop="-10dp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:background="#673ab7"
+        android:id="@+id/textNimStatus"
+        android:layout_below="@id/textNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2000018335 | User">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn_logout"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/home"
+        android:layout_alignRight="@id/textNimStatus"
+        android:id="@+id/btn_logout"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="logout"
+        tools:ignore="NotSibling"
+        android:textColor="@color/white"
+        android:backgroundTint="#7e57c2">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tambah"
+        android:textColor="@color/white"
+        android:backgroundTint="#7e57c2"/>
+
+</RelativeLayout>

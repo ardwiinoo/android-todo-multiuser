@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#b39ddb"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Account"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+    </TextView>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubah data user yang kamu inginkan"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="14dp">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintTextColor="@color/white"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="300dp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Nama">
+
+    </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintTextColor="@color/white"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/nim_edit"
+        android:textColor="@color/white"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="NIM">
+
+    </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintTextColor="@color/white"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/pass_edit"
+        android:layout_width="300dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="Password">
+
+    </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:hintTextColor="@color/white"
+        android:layout_height="wrap_content">
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Is_Admin?" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Update AKUN"
+        android:textColor="@color/white"
+        android:backgroundTint="#7e57c2"
+        android:layout_height="60dp">
+
+    </Button>
+
+</LinearLayout>
